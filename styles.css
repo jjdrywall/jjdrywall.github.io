@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background: #444;
+  background: rgb(210, 107, 39);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -22,7 +22,7 @@ header {
 
 .tagline {
   font-style: italic;
-  color: #ccc;
+  color: #faf9f9;
 }
 
 .hero {
@@ -55,4 +55,39 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 20px;
+}
+
+.gallery {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+.hero-gif {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
 }
